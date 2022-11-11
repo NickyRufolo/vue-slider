@@ -21,7 +21,6 @@ var app = new Vue({
             else {
                 return this.indice--
             }
-
         }
     }
     })
