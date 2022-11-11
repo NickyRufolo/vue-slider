@@ -1,0 +1,14 @@
+
+div > img {
+    object-fit: contain;
+}
+
+i {
+    font-size: 5rem;
+}
+.pallini {
+    text-align: center;
+}
+.fa-circle {
+    font-size: 1rem;
+}
