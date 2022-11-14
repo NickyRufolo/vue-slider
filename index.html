@@ -21,15 +21,19 @@
     <!-- div slider -->
     <div class="w-50 m-5 m-auto mt-5 text-bg-dark p-3">
 
+        <div class="d-flex justify-content-center">
         <!-- icona sx -->
         <i class="fa-solid fa-circle-left" @click="cambiaOggettoLeft"></i>
 
-        <img v-bind:src="linkImageMe[indice]" class="w-50 m-auto" alt="descrizione Immagine">
-        
+            <!-- pics  -->
+            
+            <img v-bind:src="linkImageMe[indice]" class="w-50 m-auto" alt="descrizione Immagine">
+            
         <!-- icona dx -->
         <i class="fa-solid fa-circle-right" @click="cambiaOggettoRight"></i>
-
-        <div class="pallini me-5 text-bg-danger p-3">
+    </div>
+        <!-- div x pallini -->
+        <div class="pallini justify-content-center text-bg-danger p-3">
                 <!-- pallini -->
                 <i class="fa-solid fa-circle me-5 " @click="indice = 0"></i>
                 <i class="fa-solid fa-circle me-5" @click="indice = 1"></i>

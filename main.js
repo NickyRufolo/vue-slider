@@ -1,9 +1,14 @@
 var app = new Vue({
     el: '#slider',
+    //array di oggetti dentrlo a data
     data: {
         linkImageMe: [`./DSC_5414.jpg`,`./Immagine JPEG 3.jpeg`, 
         `./HardEbook (1).jpg`],
         indice: 0,
+    },
+    mounted() {
+        // entra in gioco quando l'applicativo vue ha caricato el: #app
+        this.attivaIntervallo()
     },
     methods: {
         cambiaOggettoRight: function () {
@@ -21,6 +26,9 @@ var app = new Vue({
             else {
                 return this.indice--
             }
+        },
+        attivaIntervallo(){
+            setInterval( ()=>{ this.cambiaOggettoLeft() }, 3000);
         }
     }
     })
